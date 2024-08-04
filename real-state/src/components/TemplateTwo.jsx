@@ -17,7 +17,11 @@ const TemplateTwo = () => {
             <rect x="-19" width="1080" height="565" fill="red" />
           </svg>
 
-          <img src={tempImage} className="absolute h-[666px]" alt="" />
+          <img
+            src={tempImage}
+            className="absolute h-[666px] w-[1080px]"
+            alt=""
+          />
         </div>
 
         {/* bottom background  */}

@@ -152,7 +152,11 @@ const TemplateThree = () => {
       <div className="absolute top-[120px] right-[47px]">
         <div className="w-[492px] h-[696px] bg-[#FFDE59] rounded-[100px] flex items-center justify-center">
           <div className="w-[487px] h-[691px] bg-[#ffffff] rounded-[100px] ">
-            <img src={tempImg} alt="" />
+            <img
+              className="w-[487px] h-[691px] rounded-[100px] "
+              src="https://img.freepik.com/free-photo/beautiful-decorated-bouquet-roses_23-2151618026.jpg?ga=GA1.1.317116668.1722370668"
+              alt=""
+            />
           </div>
         </div>
       </div>

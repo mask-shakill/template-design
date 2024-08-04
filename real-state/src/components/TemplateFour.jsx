@@ -143,7 +143,11 @@ const TemplateFour = () => {
           >
             <path d="M0 0H864V484.828H0V0Z" fill="black" />
           </svg>
-          <img src={tempImage} className="absolute top-0" alt="" />
+          <img
+            src="https://img.freepik.com/premium-photo/majestic-blue-dragon-mystical-fantasy-setting_1215975-1634.jpg?ga=GA1.1.317116668.1722370668"
+            className="absolute top-0 w-[864px] h-[484px]"
+            alt=""
+          />
         </div>
       </section>
 
