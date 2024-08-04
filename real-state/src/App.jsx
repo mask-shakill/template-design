@@ -5,6 +5,7 @@ import TemplateThree from "./components/TemplateThree";
 import TemplateFour from "./components/TemplateFour";
 
 import TemplateFive from "./components/TemplateFive";
+import TemplateSix from "./components/TemplateSix";
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
       {/* <DemoTemp /> */}
       <TemplateFive />
       <br /> <br />
+      <TemplateSix />
+      <br />
+      <br />
     </div>
   );
 };
