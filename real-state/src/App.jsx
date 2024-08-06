@@ -8,11 +8,12 @@ import TemplateFive from "./components/TemplateFive";
 import TemplateSix from "./components/TemplateSix";
 import TemplateSeven from "./components/TemplateSeven";
 import Navbar from "./components/Navbar";
+import TemplateEight from "./components/TemplateEight";
 
 const App = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-slate-200 ">
-      <Navbar />
+      {/* <Navbar />
       <br /> <br />
       <TemplateThree />
       <br /> <br />
@@ -23,13 +24,16 @@ const App = () => {
       <TemplateFour />
       <br /> <br />
       {/* <DemoTemp /> */}
-      <TemplateFive />
+      {/* <TemplateFive />
       <br /> <br />
       <TemplateSix />
       <br />
       <br />
       <TemplateSeven />
-      <br /> <br />
+      <br /> <br /> */}
+      <TemplateEight />
+      <br />
+      <br />
     </div>
   );
 };
