@@ -2,6 +2,7 @@ import React from "react";
 import Temp1 from "./components/Temp1";
 import Temp2 from "./components/Temp2";
 import Temp3 from "./components/Temp3";
+import Temp4 from "./components/Temp4";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Temp1 />
       <Temp2 />
       <Temp3 />
+      <Temp4 />
     </div>
   );
 };
