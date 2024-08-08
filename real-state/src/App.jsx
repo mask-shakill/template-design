@@ -38,14 +38,16 @@ const App = () => {
       {/* <TemplateEight /> */}
       <br />
       <br />
-
       {/* <Demo /> */}
       {/* <TemplateNine /> */}
-      {/* <TemplateSix /> */}
       {/* <Shakil /> */}
       {/* <TemplateSix /> */}
       {/* <TemplateNine /> */}
       <TemplateTen />
+      <br />
+      <br />
+      <TemplateSix />
+      <br /> <br />
     </div>
   );
 };
