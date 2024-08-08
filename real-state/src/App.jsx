@@ -1,18 +1,23 @@
 import React from "react";
-import TemplateOne from "./components/TemplateOne";
-import TemplateTwo from "./components/TemplateTwo";
-import TemplateThree from "./components/TemplateThree";
-import TemplateFour from "./components/TemplateFour";
-
-import TemplateFive from "./components/TemplateFive";
+import Demo from "./components/Demo";
+import TemplateNine from "./components/TemplateNine";
+import Shakil from "./components/Shakil";
 import TemplateSix from "./components/TemplateSix";
-import TemplateSeven from "./components/TemplateSeven";
-import Navbar from "./components/Navbar";
-import TemplateEight from "./components/TemplateEight";
+import TemplateTen from "./components/TemplateTen";
+// import TemplateOne from "./components/TemplateOne";
+// import TemplateTwo from "./components/TemplateTwo";
+// import TemplateThree from "./components/TemplateThree";
+// import TemplateFour from "./components/TemplateFour";
+
+// import TemplateFive from "./components/TemplateFive";
+// import TemplateSix from "./components/TemplateSix";
+// import TemplateSeven from "./components/TemplateSeven";
+// import Navbar from "./components/Navbar";
+// import TemplateEight from "./components/TemplateEight";
 
 const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-slate-200 ">
+    <div className="lg:flex w-[400px] lg:w-full lg:flex-col lg:items-center lg:justify-center  ">
       {/* <Navbar />
       <br /> <br />
       <TemplateThree />
@@ -23,17 +28,24 @@ const App = () => {
       <br /> <br />
       <TemplateFour />
       <br /> <br />
-      {/* <DemoTemp /> */}
-      {/* <TemplateFive />
+      <TemplateFive />
       <br /> <br />
       <TemplateSix />
       <br />
       <br />
       <TemplateSeven />
       <br /> <br /> */}
-      <TemplateEight />
+      {/* <TemplateEight /> */}
       <br />
       <br />
+
+      {/* <Demo /> */}
+      {/* <TemplateNine /> */}
+      {/* <TemplateSix /> */}
+      {/* <Shakil /> */}
+      {/* <TemplateSix /> */}
+      {/* <TemplateNine /> */}
+      <TemplateTen />
     </div>
   );
 };
