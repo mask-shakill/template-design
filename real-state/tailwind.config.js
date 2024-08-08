@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bebas: ["Bebas Neue", "sans-serif"],
-        Be_Vietnam: ["Be Vietnam Pro", "sans-serif"],
-        popins: ["Poppins", "sans-serif"],
-        League_Spartan: ["League Spartan", "sans-serif"],
+        vietnam: ['"Be Vietnam Pro"', 'sans-serif'],
+        bebas: ['"Bebas Neue"', 'cursive'],
+        dancing: ['"Dancing Script"', 'cursive'],
+        roboto: ['Roboto', 'sans-serif'],
+        sevillana: ['Sevillana', 'cursive'],
       },
     },
   },
