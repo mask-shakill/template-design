@@ -9,6 +9,7 @@ export default {
         dancing: ['"Dancing Script"', 'cursive'],
         roboto: ['Roboto', 'sans-serif'],
         sevillana: ['Sevillana', 'cursive'],
+        poppins: ["Poppins", 'sans-serif'],
       },
     },
   },

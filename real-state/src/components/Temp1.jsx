@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../public/brandLogo1.png";
-import { Phone } from "lucide-react";
+
 const Temp1 = () => {
   return (
     <div>
@@ -62,7 +62,7 @@ const Temp1 = () => {
           </div>
 
           {/* sub-heading  */}
-          <div className="w-[165px] h-[67px] mt-4  text-[16px]  font-normal">
+          <div className="w-[165px] h-[67px] mt-6  text-[16px]  font-normal">
             <h1
               style={{ fontFamily: "Be Vietnam" }}
               className=" text-19px leading-[17px] text-[#F9C700]"
@@ -73,7 +73,7 @@ const Temp1 = () => {
           </div>
 
           {/* contact info  */}
-          <div className="mt-[120px] flex items-center gap-x-2">
+          <div className="mt-[110px] flex items-center gap-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
