@@ -17,7 +17,7 @@ import TemplateTen from "./components/TemplateTen";
 
 const App = () => {
   return (
-    <div className="lg:flex w-[400px] lg:w-full lg:flex-col lg:items-center lg:justify-center  ">
+    <div className="px-28">
       {/* <Navbar />
       <br /> <br />
       <TemplateThree />

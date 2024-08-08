@@ -14,72 +14,88 @@ const TemplateTen = () => {
   const handleBookingTextChange = (e) => setBookingText(e.target.value);
 
   const getCompanyNameSizeClass = () => {
-    if (companyName.length > 22) return "text-[11px]";
-    if (companyName.length > 18) return "text-[13px]";
-    if (companyName.length > 13) return "text-[14px]";
-    if (companyName.length > 8) return "text-sm";
-    if (companyName.length > 5) return "text-[22px]";
-    return "text-sm";
+    if (companyName.length >= 13) return "text-[11px] pt-1";
+    if (companyName.length > 7) return "text-[15px] pt-1";
+    if (companyName.length >= 1) return "text-[16px] pt-3";
+
+    // if (companyName.length > 15) return "text-[11px] ";
+    // if (companyName.length == 15) return "text-[13px] ";
+    // if (companyName.length > 7) return "text-[15px] pt-3 ";
+    // if (companyName.length >= 1) return "text-[16px] pt-4 ";
   };
 
   const getHeadingSizeClass = () => {
-    if (heading.length > 48) return "text-xs";
-    if (heading.length > 36) return "text-sm";
-    if (heading.length > 24) return "text-base";
-    if (heading.length > 12) return "text-sm";
-    return "text-lg ";
+    if (heading.length >= 40) return "text-[15px]"; // Long text
+    if (heading.length > 28) return "text-[17px]";
+    if (heading.length > 22) return "text-[20px]"; // Moderately long text
+    if (heading.length > 21) return "text-[21px]"; // Medium text
+    return "text-[21px]"; // Short text
   };
 
   const getSubHeadingSizeClass = () => {
-    if (subHeading.length > 80) return "text-xs";
+    if (subHeading.length > 80) return "text-sm";
     if (subHeading.length > 60) return "text-sm";
-    if (subHeading.length > 40) return "text-base";
+    if (subHeading.length > 40) return "text-md";
     if (subHeading.length > 20) return "text-lg";
     return "text-[14px] ";
   };
 
   const getBookingTextSizeClass = () => {
-    if (bookingText.length > 12) return "text-[14px] py-[10px]";
+    if (bookingText.length > 12) return "text-[14px] py-[7px]";
     if (bookingText.length > 8) return "text-[15px] py-[9px]";
     if (bookingText.length > 4) return "text-base";
     return "text-lg";
   };
 
   return (
-    <div>
+    <div className="flex gap-x-2">
       {/* Input fields */}
-      <input
-        type="text"
-        placeholder="Company Name"
-        maxLength="28"
-        value={companyName}
-        onChange={handleCompanyNameChange}
-        className="font-poppins"
-      />
-      <input
-        type="text"
-        placeholder="Heading"
-        maxLength="60"
-        value={heading}
-        onChange={handleHeadingChange}
-        className="font-poppins"
-      />
-      <input
-        type="text"
-        placeholder="Sub Heading"
-        maxLength="100"
-        value={subHeading}
-        onChange={handleSubHeadingChange}
-        className="font-poppins"
-      />
-      <input
-        type="text"
-        placeholder="Booking Text"
-        maxLength="16"
-        value={bookingText}
-        onChange={handleBookingTextChange}
-        className="font-poppins"
-      />
+      <div className="flex flex-col gap-y-3">
+        <label className="font-poppins">
+          Company Name
+          <input
+            type="text"
+            placeholder="Company Name"
+            maxLength="28"
+            value={companyName}
+            onChange={handleCompanyNameChange}
+            className="font-poppins p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </label>
+        <label className="font-poppins">
+          Heading
+          <input
+            type="text"
+            placeholder="Heading"
+            maxLength="60"
+            value={heading}
+            onChange={handleHeadingChange}
+            className="font-poppins p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </label>
+        <label className="font-poppins">
+          Sub Heading
+          <input
+            type="text"
+            placeholder="Sub Heading"
+            maxLength="100"
+            value={subHeading}
+            onChange={handleSubHeadingChange}
+            className="font-poppins p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </label>
+        <label className="font-poppins">
+          Booking Text
+          <input
+            type="text"
+            placeholder="Booking Text"
+            maxLength="16"
+            value={bookingText}
+            onChange={handleBookingTextChange}
+            className="font-poppins p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </label>
+      </div>
 
       <div className="h-[400px] w-[400px] relative">
         <div className="w-[269px] h-full bg-blue-500 absolute top-0 right-0 overflow-hidden">
@@ -112,21 +128,21 @@ const TemplateTen = () => {
         </svg>
 
         {/* Content */}
-        <div className="left-4 absolute top-4 ">
+        <div className="left-4 absolute top-3 ">
           <div className="flex items-center  gap-x-2">
             <img className="w-10 h-8 " src={logoImg} alt="Company Logo" />
             <div
-              className={`w-20 h-12 break-words   ${getCompanyNameSizeClass()}`}
+              className={`w-20 h-12  break-words   ${getCompanyNameSizeClass()}`}
             >
               <p className="font-poppins text-white uppercase font-semibold">
-                {companyName || "Your company"}
+                {companyName || "Adds Pillar"}
               </p>
             </div>
           </div>
 
           {/* Heading */}
           <div
-            className={`w-36 h-20 mb-3  break-words mt-3 ${getHeadingSizeClass()} whitespace-pre-wrap`}
+            className={`w-36 h-20 mb-3  font-popins break-words mt-3 ${getHeadingSizeClass()} whitespace-pre-wrap`}
           >
             <p className="font-poppins font-medium text-white">
               {heading || "Transform Your Future World Today"}
@@ -135,7 +151,7 @@ const TemplateTen = () => {
 
           {/* Sub Heading */}
           <div
-            className={`w-36 h-32 mt-3 font-Be_Vietnam font-normal break-words  ${getSubHeadingSizeClass()} whitespace-pre-wrap`}
+            className={`w-36 h-32 mt-6  font-Be_Vietnam font-normal break-words  ${getSubHeadingSizeClass()} whitespace-pre-wrap`}
           >
             <p className="text-white">
               {subHeading ||
@@ -145,7 +161,7 @@ const TemplateTen = () => {
 
           {/* Booking Button */}
           <button
-            className={`bg-[#C6AA77] uppercase px-5 mb-3 py-1 rounded-full font-bold mt-5 ${getBookingTextSizeClass()}`}
+            className={`bg-[#C6AA77] uppercase px-4 mb-2 py-[2px] rounded-full font-bold mt-4 ${getBookingTextSizeClass()}`}
           >
             {bookingText || "book now"}
           </button>
