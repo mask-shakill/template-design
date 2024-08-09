@@ -3,6 +3,7 @@ import Temp1 from "./components/Temp1";
 import Temp2 from "./components/Temp2";
 import Temp3 from "./components/Temp3";
 import Temp4 from "./components/Temp4";
+import Temp5 from "./components/Temp5";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Temp2 />
       <Temp3 />
       <Temp4 />
+      <Temp5 />
     </div>
   );
 };

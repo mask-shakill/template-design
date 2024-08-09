@@ -38,12 +38,12 @@ const Temp4 = () => {
         </div>
 
         {/* content  */}
-        <div className="absolute  left-12 top-[260px] ">
+        <div className="absolute  left-12 top-[257px] ">
           {/* heading  */}
           <div className="w-[200px] h-[60px]  ">
             <h1
               style={{ fontFamily: "Bebas Neue", fontWeight: "400" }}
-              className=" uppercase leading-[28px] text-[18px] text-[#FFFFFF]"
+              className=" uppercase leading-[25px] text-[18px] text-[#FFFFFF]"
             >
               Modern 3-bed home with pool and garden in prime location
             </h1>
@@ -61,7 +61,7 @@ const Temp4 = () => {
           </div>
 
           {/* email  */}
-          <div className="flex gap-x-2 mt-4 mb-3">
+          <div className="flex gap-x-2 mt-6 mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
