@@ -140,7 +140,7 @@ const Temp4 = () => {
           </div>
         </div>
         {/* logo and brand name  */}
-        <div className="flex items-center absolute top-4 right-6 gap-x-2">
+        <div className="flex items-center overflow-hidden absolute top-4 right-6 gap-x-2">
           <img src={Logo} className="h-[18px] w-[20px]" alt="" />
           <h1
             style={{ fontFamily: "Bebas Neue", fontWeight: "400" }}

@@ -23,7 +23,7 @@ const Temp5 = () => {
       <div className="w-[338.15px] h-[197.778px] bg-[#FFFFFF] absolute top-[64px] left-[31px]"></div>
       <div className="w-[320px] h-[180px] absolute top-[73px] left-[40px] overflow-hidden">
         <img
-          className="h-full w-full object-cover"
+          className="h-full w-full "
           src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?ga=GA1.1.317116668.1722370668&semt=ais_hybrid"
           alt=""
         />
